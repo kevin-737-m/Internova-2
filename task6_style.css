@@ -1,0 +1,525 @@
+/* =========================
+   UNIVERSAL
+========================= */
+
+* {
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f8fafc;
+
+    color: #172033;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    min-height: 75px;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: #0f172a;
+
+    color: white;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+}
+
+
+.logo {
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+
+.navbar {
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+.navbar a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+
+.navbar a:hover {
+    color: #38bdf8;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 600px;
+
+    padding: 80px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: #e0f2fe;
+}
+
+
+.hero-content {
+    max-width: 750px;
+}
+
+
+.small-heading {
+    color: #0284c7;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.hero h1 {
+    margin-top: 15px;
+
+    font-size: 65px;
+
+    line-height: 1.05;
+}
+
+
+.hero h1 span {
+    color: #0284c7;
+}
+
+
+.hero-content>p:not(.small-heading) {
+    max-width: 600px;
+
+    margin-top: 25px;
+
+    color: #475569;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 13px 24px;
+
+    border-radius: 7px;
+
+    background-color: #0284c7;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    box-shadow: 0 5px 15px rgba(2, 132, 199, 0.2);
+
+    transition: 0.3s;
+}
+
+
+.button:hover {
+    background-color: #0369a1;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+.section {
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 100px 30px;
+}
+
+
+.section-title {
+    margin-bottom: 45px;
+}
+
+
+.section-title>p {
+    color: #0284c7;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.section-title h2 {
+    margin-top: 10px;
+
+    font-size: 42px;
+}
+
+
+/* =========================
+   CSS GRID
+========================= */
+
+.course-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.course-card {
+    min-height: 280px;
+
+    padding: 30px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    background-color: white;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+
+.course-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+.course-number {
+    color: #0284c7;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.course-card h3 {
+    margin-top: 40px;
+
+    font-size: 24px;
+}
+
+
+.course-card p {
+    margin-top: 12px;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+.course-card a {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    color: #0284c7;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features-section {
+    padding: 100px 7%;
+
+    background-color: #0f172a;
+
+    color: white;
+}
+
+
+.features-section .section-title {
+    max-width: 700px;
+
+    margin: auto auto 50px;
+}
+
+
+.features-section .section-title h2 {
+    color: white;
+}
+
+
+.features {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 20px;
+}
+
+
+.feature {
+    flex: 1;
+
+    padding: 35px;
+
+    border: 1px solid #334155;
+
+    border-radius: 10px;
+
+    background-color: #172033;
+}
+
+
+.feature>span {
+    color: #38bdf8;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.feature h3 {
+    margin-top: 50px;
+
+    font-size: 22px;
+}
+
+
+.feature p {
+    margin-top: 12px;
+
+    color: #94a3b8;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background-color: #e0f2fe;
+}
+
+
+.contact h2 {
+    font-size: 42px;
+}
+
+
+.contact p {
+    margin-top: 12px;
+
+    color: #64748b;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 30px;
+
+    background-color: #020617;
+
+    color: #94a3b8;
+
+    text-align: center;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .header {
+        padding: 0 4%;
+    }
+
+
+    .hero {
+        padding: 70px 5%;
+    }
+
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+
+    .course-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .features {
+        flex-direction: column;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .navbar {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .hero {
+        min-height: 500px;
+
+        padding: 60px 25px;
+    }
+
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+
+    .hero-content>p:not(.small-heading) {
+        font-size: 15px;
+    }
+
+
+    .section {
+        padding: 70px 20px;
+    }
+
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .course-card {
+        min-height: auto;
+    }
+
+
+    .features-section {
+        padding: 70px 20px;
+    }
+
+    .feature {
+        padding: 25px;
+    }
+
+    .contact {
+        padding: 70px 20px;
+    }
+
+    .contact h2 {
+        font-size: 32px;
+    }
+}

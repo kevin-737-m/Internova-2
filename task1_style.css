@@ -1,0 +1,113 @@
+/* Universal Selector */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Element Selector */
+
+body {
+    margin: 0;
+
+    background-color: #f4f6f8;
+
+    font-family: Arial, sans-serif;
+
+    color: #222;
+}
+
+
+/* Element Selector */
+
+header {
+    background-color: #172554;
+
+    color: white;
+
+    padding: 40px;
+
+    text-align: center;
+}
+
+
+/* Element Selector */
+
+h1 {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Class Selector */
+
+.intro {
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    background-color: white;
+}
+
+
+/* ID Selector */
+
+#main-heading {
+    color: #172554;
+
+    text-align: center;
+}
+
+/* Class Selector */
+.highlight {
+    color: #2563eb;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+/* Class Selector */
+.cards {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+/* Class Selector */
+.card {
+    width: 250px;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: #2563eb;
+}
+
+footer {
+    margin-top: 40px;
+
+    padding: 20px;
+
+    background-color: #172554;
+
+    color: white;
+
+    text-align: center;
+}
